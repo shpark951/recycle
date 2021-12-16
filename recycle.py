@@ -19,7 +19,7 @@ import paho.mqtt.publish as publish
 import json
 #음성인식==========
 kakao_speech_url = "https://kakaoi-newtone-openapi.kakao.com/v1/recognize"
-rest_api_key = '6385680a2e5a1e52b773855f6be739d8'
+rest_api_key = '{rest_api_key}'
 headers = {
 "Content-Type": "application/octet-stream",
 "X-DSS-Service": "DICTATION",
@@ -28,7 +28,7 @@ headers = {
 URL = "https://kakaoi-newtone-openapi.kakao.com/v1/synthesize" 
 HEADERS = {
     "Content-Type" : "application/xml",
-    "Authorization" : "KakaoAK 6385680a2e5a1e52b773855f6be739d8"
+    "Authorization" : "KakaoAK {Authorizationkey}"
 }
 #음성인식==========
 f=open("pet.jpg", "rb") #3.7kiB in same folder
